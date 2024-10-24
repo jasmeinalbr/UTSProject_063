@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- Firstname Field -->
+    <EditText
+        android:id="@+id/etFirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Firstname"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Lastname Field -->
+    <EditText
+        android:id="@+id/etLastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lastname"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etRegUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etRegPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Confirm Password Field -->
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:padding="12dp" />
+</LinearLayout>
