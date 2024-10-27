@@ -17,25 +17,21 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Inisialisasi SharedPreferences
+        // Initialize SharedPreferences
         sharedPreferences = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE)
 
-        val etFirstname: EditText = findViewById(R.id.etFirstname)
-        val etLastname: EditText = findViewById(R.id.etLastname)
         val etRegUsername: EditText = findViewById(R.id.etRegUsername)
         val etRegPassword: EditText = findViewById(R.id.etRegPassword)
         val etConfirmPassword: EditText = findViewById(R.id.etConfirmPassword)
         val btnRegister: Button = findViewById(R.id.btnRegister)
 
         btnRegister.setOnClickListener {
-            val firstname = etFirstname.text.toString()
-            val lastname = etLastname.text.toString()
             val username = etRegUsername.text.toString()
             val password = etRegPassword.text.toString()
             val confirmPassword = etConfirmPassword.text.toString()
 
             if (password == confirmPassword) {
-                // Simpan data ke SharedPreferences
+                // Save data to SharedPreferences
                 val editor = sharedPreferences.edit()
                 editor.putString("username", username)
                 editor.putString("password", password)
@@ -43,7 +39,7 @@ class RegisterActivity : AppCompatActivity() {
 
                 Toast.makeText(this, "Register Successful", Toast.LENGTH_SHORT).show()
 
-                // Pindah ke halaman login (MainActivity)
+                // Redirect to MainActivity
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()

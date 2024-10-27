@@ -5,32 +5,21 @@
     android:orientation="vertical"
     android:padding="24dp">
 
-    <!-- Firstname Field -->
-    <EditText
-        android:id="@+id/etFirstname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Firstname"
-        android:inputType="text"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp" />
-
-    <!-- Lastname Field -->
-    <EditText
-        android:id="@+id/etLastname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Lastname"
-        android:inputType="text"
-        android:padding="12dp"
-        android:layout_marginBottom="16dp" />
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"/>
 
     <!-- Username Field -->
     <EditText
         android:id="@+id/etRegUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:hint="Enter Username"
         android:inputType="text"
         android:padding="12dp"
         android:layout_marginBottom="16dp" />

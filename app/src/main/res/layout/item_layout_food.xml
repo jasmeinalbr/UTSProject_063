@@ -1,21 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"> <!-- Add padding here -->
 
     <!-- Gambar Makanan -->
     <ImageView
         android:id="@+id/foodImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:src="@drawable/batagor"
         android:layout_marginEnd="8dp"/>
 
-    <!-- Nama dan Deskripsi Makanan -->
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <!-- Nama, Deskripsi, dan Harga Makanan -->
+    <RelativeLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_weight="1"
+        android:paddingEnd="16dp"> <!-- Add paddingEnd to control description alignment -->
 
         <!-- Nama Makanan -->
         <TextView
@@ -23,10 +25,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Food Name"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:layout_marginBottom="4dp"/>
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Harga Makanan -->
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Price"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/foodName"
+            android:layout_marginEnd="0dp" />
 
         <!-- Deskripsi Makanan -->
         <TextView
@@ -35,7 +51,23 @@
             android:layout_height="wrap_content"
             android:text="Description of the food."
             android:textSize="14sp"
-            android:textColor="#6D6D6D"/>
-    </LinearLayout>
+            android:textColor="#6D6D6D"
+            android:layout_below="@id/foodName"
+            android:layout_alignStart="@id/foodName"
+            android:layout_marginTop="4dp"
+            android:layout_toStartOf="@id/foodPrice"/>
+
+        <!-- Cart Icon Button -->
+        <ImageButton
+            android:id="@+id/buyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodPrice"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_cart"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Buy"
+            android:padding="8dp" />
+    </RelativeLayout>
 
 </LinearLayout>

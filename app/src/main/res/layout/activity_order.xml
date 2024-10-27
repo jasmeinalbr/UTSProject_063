@@ -9,7 +9,7 @@
     android:padding="16dp"
     tools:context=".OrderActivity">
 
-        <!-- Judul Halaman -->
+        <!-- Title -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -20,22 +20,34 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Input Nama Makanan -->
+        <!-- Food Name -->
         <TextView
+            android:id="@+id/foodNameTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Food Name"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
-        <TextView
-            android:id="@+id/etFoodName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter food name - Get From List"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
 
-        <!-- Input Jumlah Porsi -->
+        <!-- Food Price -->
+        <TextView
+            android:id="@+id/foodPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : Rp.0"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Name of Username -->
+        <TextView
+            android:id="@+id/orderingNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ordering Name : Usep"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input for Number of Servings -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,22 +62,6 @@
             android:inputType="number"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
-
-        <!-- Input Jumlah Porsi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ordering Name"
-            android:textSize="18sp"
-            android:layout_marginBottom="8dp"/>
-        <EditText
-            android:id="@+id/etName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Ordering name by"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
-
 
         <!-- Input Catatan Tambahan -->
         <TextView
@@ -82,7 +78,16 @@
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Tombol Order -->
+        <!-- Display Total Price -->
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: Rp.0"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Order Button -->
         <Button
             android:id="@+id/btnOrder"
             android:layout_width="match_parent"
@@ -90,5 +95,4 @@
             android:text="Place Order"
             android:textColor="@android:color/white"
             android:padding="12dp"/>
-
 </LinearLayout>

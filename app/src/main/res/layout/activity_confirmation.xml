@@ -20,39 +20,61 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Confirmation Nama Makanan -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Food Name: Batagor"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
-
-    <!-- Confirmation Jumlah Porsi -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Number of Servings: 2 pax"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
-
     <!-- Confirmation Nama pengorder -->
     <TextView
+        android:id="@+id/tvOrderingName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ordering Name: Usep"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
+    <!-- Confirmation Nama Makanan -->
+    <TextView
+        android:id="@+id/tvFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Food Name: Batagor"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Confirmation Harga Makanan -->
+    <TextView
+        android:id="@+id/tvFoodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: Rp. 0"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Confirmation Jumlah Porsi -->
+    <TextView
+        android:id="@+id/tvServings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Servings: 2 pax"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
     <!-- Input Catatan Tambahan -->
     <TextView
+        android:id="@+id/tvNotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Additional Notes: Tidak Pedas"
         android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Confirmation Total harga  -->
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: Rp. 0"
+        android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Input Catatan Tambahan -->
+    <!-- Catatan Tambahan -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
