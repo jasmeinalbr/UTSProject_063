@@ -2,40 +2,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp">
 
-    <!-- App Logo -->
-    <ImageView
-        android:id="@+id/logoImageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/donut"
-        android:contentDescription="App Logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <!-- App Name -->
-    <TextView
-        android:id="@+id/tvAppName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MamFoods"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="24dp" />
+        <!-- Logo Aplikasi -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:contentDescription="App Logo"
+            android:src="@drawable/logo" />
 
-    <!-- Button to Order Foods -->
-    <Button
-        android:id="@+id/btnOrderFoods"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Let's Order Some Foods!" />
+        <!-- Nama Aplikasi -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MamFoods"
+            android:fontFamily="@font/yeonsung"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
 
-    <!-- Logout Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deliever Favorite Your Food And Drink"
+            android:fontFamily="@font/yeonsung"
+            android:textColor="@color/red"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Tombol untuk Memesan Makanan -->
+        <Button
+            android:id="@+id/btnOrderFoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Order Some Foods!"
+            android:fontFamily="@font/yeonsung"
+            android:backgroundTint="@color/merahmuda"/>
+    </LinearLayout>
+
+    <!-- Tombol Logout di bagian bawah -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
-        android:layout_marginTop="16dp" />
+        android:fontFamily="@font/yeonsung"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/merahmuda" />
 </LinearLayout>

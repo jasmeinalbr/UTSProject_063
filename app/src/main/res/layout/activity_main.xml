@@ -15,18 +15,31 @@
     <!-- Logo Aplikasi -->
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login To Your Account"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
 
     <!-- Username Field -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_username"
+        android:hint="  Username"
+        android:fontFamily="@font/yeonsung"
         android:drawableLeft="@drawable/ic_person"
         android:padding="12dp"
         android:layout_marginBottom="16dp"
@@ -37,10 +50,10 @@
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_password"
+        android:hint="  Password"
+        android:fontFamily="@font/yeonsung"
         android:drawableLeft="@drawable/ic_lock"
         android:padding="12dp"
-        android:layout_marginBottom="16dp"
         android:inputType="textPassword"/>
 
     <!-- Button Login -->
@@ -48,17 +61,32 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
+        android:text="Login"
         android:layout_gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:layout_marginBottom="16dp"/>
+        android:fontFamily="@font/yeonsung"
+        android:backgroundTint="@color/merahmuda"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="120dp"/>
 
     <!-- Register Link -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/yeonsung"
+        android:text="Don't Have Account?"
+        android:textColor="@color/red"
+        android:textSize="16dp" />
+
     <TextView
         android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"
+        android:text="Register Here"
+        android:textSize="16dp"
+        android:textColor="@color/red"
+        android:fontFamily="@font/yeonsung"
         android:layout_gravity="center"
         android:clickable="true"
         android:focusable="true"/>

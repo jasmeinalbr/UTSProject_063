@@ -9,22 +9,49 @@
     android:padding="16dp"
     tools:context=".ConfirmationActivity">
 
+    <!-- Logo Aplikasi -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="App Logo"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Nama Aplikasi -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MamFoods"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
     <!-- Judul Halaman -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Food"
-        android:textSize="24sp"
+        android:text="Order Receipt"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/red"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="30dp"/>
 
     <!-- Confirmation Nama pengorder -->
     <TextView
         android:id="@+id/tvOrderingName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/yeonsung"
         android:text="Ordering Name: Usep"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
@@ -35,6 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Food Name: Batagor"
+        android:fontFamily="@font/yeonsung"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -44,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price: Rp. 0"
+        android:fontFamily="@font/yeonsung"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -53,6 +82,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number of Servings: 2 pax"
+        android:fontFamily="@font/yeonsung"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -62,6 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Additional Notes: Tidak Pedas"
+        android:fontFamily="@font/yeonsung"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
 
@@ -71,22 +102,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Total Price: Rp. 0"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:fontFamily="@font/yeonsung"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <!-- Catatan Tambahan -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thanks for your order and please wait for delivering by nearest courier"
+        android:text="Thanks for your order!"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait for delivering by nearest courier."
         android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/red"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"/>
 
     <Button
         android:id="@+id/backtoMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/yeonsung"
+        android:backgroundTint="@color/merahmuda"
         android:text="Back to Menu" />
 
 </LinearLayout>

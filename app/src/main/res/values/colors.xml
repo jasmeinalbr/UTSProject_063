@@ -2,4 +2,6 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#BE1515</color>
+    <color name="merahmuda">#CE2424</color>
 </resources>
